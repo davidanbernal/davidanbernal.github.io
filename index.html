@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de visitantes</title>
+  <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="espacio-blanco"></div>
+  <header>
+    Control de visitantes
+    <img src="/images/logo.png" alt="logo" height="60" class="logo">
+  </header>
+
+  <div class="container">
+    <h2>Autorización de visitantes</h2>
+    <form>
+      <label for="oficina">Oficina:</label>
+      <select id="oficina" required>
+        <option value="">Seleccione oficina</option>
+        <option>101</option>
+        <option>102</option>
+        <option>103</option>
+        <option>205</option>
+        <option>208</option>
+      </select>
+
+      <label for="autoriza">¿Quién Autoriza?:</label>
+      <input type="text" id="autoriza" required>
+
+      <label for="clave">Contraseña de autorización:</label>
+      <input type="password" id="clave" required>
+
+      <label for="fecha">Fecha de ingreso:</label>
+      <input type="date" id="fecha" required>
+
+      <label for="identificacion">No. de identificación de visitante:</label>
+      <input type="text" id="identificacion" required>
+
+      <div class="note">* Todos los campos son obligatorios</div>
+
+      <div class="recover" onclick="alert('Función de recuperación no disponible todavía.')">Recuperar contraseña</div>
+
+      <button type="button" onclick="alert('Visitante autorizado.')">Autorizar</button>
+    </form>
+  </div>
+
+  <footer>
+    dabs 2025 - info@dabs.com
+  </footer>
+
+</body>
+</html>
